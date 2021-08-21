@@ -7,3 +7,12 @@ C:\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\obj\De
 C:\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Clase.resources
+C:\Users\diego.gomez\Documents\diego\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\diego.gomez\Documents\diego\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\diego.gomez\Documents\diego\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\diego.gomez\Documents\diego\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\diego.gomez\Documents\diego\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\diego.gomez\Documents\diego\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\diego.gomez\Documents\diego\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Clase.resources
+C:\Users\diego.gomez\Documents\diego\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\diego.gomez\Documents\diego\Scada\Clase 21-08-21\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
