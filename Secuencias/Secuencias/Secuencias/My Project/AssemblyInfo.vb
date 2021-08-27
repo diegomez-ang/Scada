@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Revisar los valores de los atributos del ensamblado
 
-<Assembly: AssemblyTitle("WindowsApplication1")>
+<Assembly: AssemblyTitle("Secuencias")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("WindowsApplication1")>
+<Assembly: AssemblyProduct("Secuencias")>
 <Assembly: AssemblyCopyright("Copyright ©  2021")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-<Assembly: Guid("3cfe0644-45d6-44c6-abd5-949e3990e0a4")>
+<Assembly: Guid("fe1f7260-305b-42d2-b0d6-55bef5028d86")>
 
 ' La información de versión de un ensamblado consta de los cuatro valores siguientes:
 '
