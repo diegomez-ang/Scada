@@ -35,7 +35,8 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Randomize()
         numero = CInt(Int((999 * Rnd()) + 1))
-        numero_generado.Text = numero
+
+
 
 
     End Sub
@@ -46,5 +47,9 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        numero_generado.Text = numero
     End Sub
 End Class
