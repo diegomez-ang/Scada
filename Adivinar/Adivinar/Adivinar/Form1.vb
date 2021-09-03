@@ -15,8 +15,10 @@
                     intento.Text += vbCrLf & "Número ingresado: " & dato.ToString() & " El número es mayor"
                     Label3.Text = i
                 Else
+                    'intento.ForeColor = Rnd()
+
                     intento.Text += vbCrLf & "¡GANASTE! el número era " & numero.ToString()
-                    Label3.Text = i
+
                     Exit For
                 End If
             Else

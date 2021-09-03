@@ -102,7 +102,7 @@ Partial Class Form1
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(194, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(178, Byte), Integer))
         Me.GroupBox1.Location = New System.Drawing.Point(63, 117)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(372, 302)
+        Me.GroupBox1.Size = New System.Drawing.Size(426, 302)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         '
