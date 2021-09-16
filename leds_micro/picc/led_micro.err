@@ -1,0 +1,4 @@
+>>> Warning 202 "led_micro.c" Line 13(5,12): Variable never used:   tiempo2
+      Memory usage:   ROM=4%      RAM=4% - 8%
+      0 Errors,  1 Warnings.
+Build Successful.
