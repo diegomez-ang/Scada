@@ -1,0 +1,47 @@
+[PROJECT]
+Target=led_micro.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=led_micro.c
+[led_micro.c]
+Type=4
+[mru-list]
+1=led_micro.c
+
+[ProjectLog]
+Days=2
+D1=14-09-2021
+D1_L=4
+D1_L1=[60107]Stopped Editing.
+D1_L2=[60535]Started Editing.
+D1_L3=[62714]Stopped Editing.
+TotalEdit=34
+TotalDebug=0
+D1_E=32
+D1_D=0
+D1_L4=[64278]Project Closed.
+D2=16-09-2021
+D2_L=12
+D2_L1=[52720]Project Opened.
+D2_L2=[53208]Started Editing.
+D2_L3=[53309]Stopped Editing.
+D2_E=2
+D2_D=0
+D2_L4=[53309]Project Closed.
+D2_L5=[55313]Project Opened.
+D2_L6=[55379]Started Editing.
+D2_L7=[55723]Stopped Editing.
+D2_L8=[56283]Started Editing.
+D2_L9=[56703]Stopped Editing.
+D2_L10=[56707]Started Editing.
+D2_L11=[57021]Stopped Editing.
+D2_L12=[57684]Started Editing.
+
+[Opened Files]
+1=led_micro.c
+2=
+[Units]
+Count=1
+1=led_micro (main)
