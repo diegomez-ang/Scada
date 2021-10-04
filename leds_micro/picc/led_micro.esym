@@ -1,8 +1,8 @@
 D G "get_longEdit" 6 263 "()  get_Int16Edit()"
-D G "__PCM__" 0 128 ""5.025""
-D G "__DEVICE__" 0 128 "877"
-D G "__DATE__" 0 128 ""16-sept.-21""
-D G "__TIME__" 0 128 ""16:05:01"" "Standard Header file for the PIC16F877A device ////////////////"
+D G "__PCM__" 0 140 ""5.025""
+D G "__DEVICE__" 0 140 "877"
+D G "__DATE__" 0 140 ""01-oct.-21""
+D G "__TIME__" 0 140 ""16:19:50"" "Standard Header file for the PIC16F877A device ////////////////"
 c L "set_tris_a" 1 3 6 "FUNCTION"
 v L "value" 1 37 "int8" `54 
 f B "set_tris_a" 1 37 "void(int8 value)" `53 
@@ -1225,16 +1225,19 @@ D G "get_int" 6 260 "()       get_Int8()"
 D G "get_intEdit" 6 261 "()   get_Int8Edit()"
 D G "get_long" 6 262 "()      get_Int16()"
 D G "get_longEdit" 6 263 "()  get_Int16Edit()"
-V G "tiempo" 0 12 "int8" `969 
-V G "tiempo2" 0 13 "int8" `970 
-V G "caracter" 0 14 "int8" `971 
-F G "secuencia_1" 0 18 "void()" `972 
-F G "secuencia_2" 0 26 "void()" `973 
-C L "secuencia_3" 0 33 1 "FUNCTION"
-F G "secuencia_3" 0 35 "void()" `974 
-F G "secuencia_4" 0 53 "void()" `975 
-C L "MAIN" 0 33 2 "FUNCTION"
-F G "MAIN" 0 95 "void()" `976 
+V G "tiempo" 0 13 "int8" `970 
+V G "caracter" 0 15 "int8" `971 
+V G "c" 0 16 "int8" `972 
+F G "RDA_isr" 0 18 "void()" `973  "gets(c);"
+C L "RDA_isr" 0 14 1 "FUNCTION"
+F G "secuencia_1" 0 26 "void()" `974 
+F G "secuencia_2" 0 34 "void()" `975 
+C L "secuencia_3" 0 14 1 "FUNCTION"
+F G "secuencia_3" 0 43 "void()" `976 
+F G "secuencia_4" 0 61 "void()" `977 
+F G "MAIN" 0 94 "void()" `978 
+C L "MAIN" 0 14 1 "FUNCTION"
+C L "MAIN" 0 14 1 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 0
