@@ -11,13 +11,13 @@ Type=4
 1=led_micro.c
 
 [ProjectLog]
-Days=2
+Days=4
 D1=14-09-2021
 D1_L=4
 D1_L1=[60107]Stopped Editing.
 D1_L2=[60535]Started Editing.
 D1_L3=[62714]Stopped Editing.
-TotalEdit=34
+TotalEdit=102
 TotalDebug=0
 D1_E=32
 D1_D=0
@@ -38,6 +38,28 @@ D2_L9=[56703]Stopped Editing.
 D2_L10=[56707]Started Editing.
 D2_L11=[57021]Stopped Editing.
 D2_L12=[57684]Started Editing.
+D3=01-10-2021
+D3_L=13
+D3_L1=[53045]Project Opened.
+D3_L2=[53057]Started Editing.
+D3_L3=[53099]Stopped Editing.
+D3_E=1
+D3_D=0
+D3_L4=[53133]Started Editing.
+D3_L5=[54273]Stopped Editing.
+D3_L6=[54730]Started Editing.
+D3_L7=[56725]Stopped Editing.
+D3_L8=[56905]Started Editing.
+D3_L9=[57418]Stopped Editing.
+D3_L10=[57595]Started Editing.
+D3_L11=[59088]Stopped Editing.
+D3_L12=[68305]Started Editing.
+D3_L13=[68633]Stopped Editing.
+D4=02-10-2021
+D4_E=67
+D4_D=0
+D4_L=1
+D4_L1=[30966]Project Closed.
 
 [Opened Files]
 1=led_micro.c

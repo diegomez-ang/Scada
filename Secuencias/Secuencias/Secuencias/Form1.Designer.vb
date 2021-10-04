@@ -56,6 +56,12 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.Conectar = New System.Windows.Forms.Button()
+        Me.Buscar = New System.Windows.Forms.Button()
+        Me.ListaPuertos = New System.Windows.Forms.ComboBox()
+        Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -76,11 +82,13 @@ Partial Class Form1
         CType(Me.off_3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.off_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.off_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Calibri", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Navy
         Me.Label1.Location = New System.Drawing.Point(246, 29)
@@ -91,11 +99,11 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.B_off)
         Me.GroupBox1.Controls.Add(Me.B_on)
         Me.GroupBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.GroupBox1.Location = New System.Drawing.Point(40, 109)
+        Me.GroupBox1.Location = New System.Drawing.Point(83, 192)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(93, 132)
         Me.GroupBox1.TabIndex = 1
@@ -130,10 +138,11 @@ Partial Class Form1
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.B_sec_3)
         Me.GroupBox2.Controls.Add(Me.B_sec_2)
         Me.GroupBox2.Controls.Add(Me.B_sec_1)
-        Me.GroupBox2.Location = New System.Drawing.Point(180, 109)
+        Me.GroupBox2.Location = New System.Drawing.Point(223, 192)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(172, 132)
         Me.GroupBox2.TabIndex = 2
@@ -172,10 +181,11 @@ Partial Class Form1
         '
         'GroupBox3
         '
+        Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox3.Controls.Add(Me.B_vel_3)
         Me.GroupBox3.Controls.Add(Me.B_vel_2)
         Me.GroupBox3.Controls.Add(Me.B_vel_1)
-        Me.GroupBox3.Location = New System.Drawing.Point(400, 109)
+        Me.GroupBox3.Location = New System.Drawing.Point(443, 192)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(164, 132)
         Me.GroupBox3.TabIndex = 3
@@ -214,6 +224,7 @@ Partial Class Form1
         '
         'GroupBox4
         '
+        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox4.Controls.Add(Me.on_8)
         Me.GroupBox4.Controls.Add(Me.on_7)
         Me.GroupBox4.Controls.Add(Me.on_6)
@@ -230,7 +241,7 @@ Partial Class Form1
         Me.GroupBox4.Controls.Add(Me.off_3)
         Me.GroupBox4.Controls.Add(Me.off_2)
         Me.GroupBox4.Controls.Add(Me.off_1)
-        Me.GroupBox4.Location = New System.Drawing.Point(41, 264)
+        Me.GroupBox4.Location = New System.Drawing.Point(83, 341)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(522, 109)
         Me.GroupBox4.TabIndex = 4
@@ -394,12 +405,63 @@ Partial Class Form1
         '
         Me.Timer3.Interval = 1000
         '
+        'GroupBox5
+        '
+        Me.GroupBox5.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox5.Controls.Add(Me.Conectar)
+        Me.GroupBox5.Controls.Add(Me.Buscar)
+        Me.GroupBox5.Controls.Add(Me.ListaPuertos)
+        Me.GroupBox5.Location = New System.Drawing.Point(85, 77)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(522, 78)
+        Me.GroupBox5.TabIndex = 5
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "CONEXIÓN SERIAL"
+        '
+        'Conectar
+        '
+        Me.Conectar.Location = New System.Drawing.Point(341, 32)
+        Me.Conectar.Name = "Conectar"
+        Me.Conectar.Size = New System.Drawing.Size(85, 22)
+        Me.Conectar.TabIndex = 2
+        Me.Conectar.Text = "Conectar"
+        Me.Conectar.UseVisualStyleBackColor = True
+        '
+        'Buscar
+        '
+        Me.Buscar.Location = New System.Drawing.Point(213, 32)
+        Me.Buscar.Name = "Buscar"
+        Me.Buscar.Size = New System.Drawing.Size(86, 22)
+        Me.Buscar.TabIndex = 1
+        Me.Buscar.Text = "Buscar puerto"
+        Me.Buscar.UseVisualStyleBackColor = True
+        '
+        'ListaPuertos
+        '
+        Me.ListaPuertos.FormattingEnabled = True
+        Me.ListaPuertos.Location = New System.Drawing.Point(97, 34)
+        Me.ListaPuertos.Name = "ListaPuertos"
+        Me.ListaPuertos.Size = New System.Drawing.Size(75, 21)
+        Me.ListaPuertos.TabIndex = 0
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(260, 478)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(207, 13)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Kevin Florez Lara  - Diego Gómez Angarita"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(693, 529)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(693, 500)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -428,6 +490,7 @@ Partial Class Form1
         CType(Me.off_3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.off_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.off_1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox5.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -465,4 +528,10 @@ Partial Class Form1
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
     Friend WithEvents Timer3 As Timer
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents Conectar As Button
+    Friend WithEvents Buscar As Button
+    Friend WithEvents ListaPuertos As ComboBox
+    Friend WithEvents SerialPort1 As IO.Ports.SerialPort
+    Friend WithEvents Label2 As Label
 End Class

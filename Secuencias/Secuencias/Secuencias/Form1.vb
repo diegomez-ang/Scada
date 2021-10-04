@@ -125,6 +125,7 @@
         Timer1.Enabled = True
         Timer2.Enabled = False
         Timer3.Enabled = False
+        SerialPort1.Write("1" + Chr(13))
 
 
 
@@ -135,6 +136,7 @@
         Timer1.Enabled = False
         Timer2.Enabled = True
         Timer3.Enabled = False
+        SerialPort1.Write("2" + Chr(13))
 
 
 
@@ -211,5 +213,46 @@
             on_1.Visible = True
 
         End If
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Buscar.Click
+        ListaPuertos.Items.Clear()
+        For Each puertoDisponible As String In My.Computer.Ports.SerialPortNames
+            ListaPuertos.Items.Add(puertoDisponible)
+        Next
+        If ListaPuertos.Items.Count > 0 Then
+            ListaPuertos.Text = ListaPuertos.Items(0)
+            MessageBox.Show("Seleccione un puerto disponible")
+            Conectar.Enabled = True
+        Else
+            MessageBox.Show("Ningun puerto seleccionado")
+            Conectar.Enabled = False
+            ListaPuertos.Items.Clear()
+            ListaPuertos.Text = ("")
+
+        End If
+    End Sub
+
+    Private Sub Conectar_Click(sender As Object, e As EventArgs) Handles Conectar.Click
+        If Conectar.Text = "Conectar" Then
+            SerialPort1.PortName = ListaPuertos.Text
+            Conectar.Text = "Desconectar"
+            Buscar.Enabled = False
+            SerialPort1.Open()
+            'ListaPuertos.Text = ""
+            'ListaPuertos.Focus()
+        ElseIf Conectar.Text = "Desconectar" Then
+            Conectar.Text = "Conectar"
+            Buscar.Enabled = True
+            SerialPort1.Close()
+        End If
+    End Sub
+
+    Private Sub GroupBox5_Enter(sender As Object, e As EventArgs) Handles GroupBox5.Enter
+
+    End Sub
+
+    Private Sub ListaPuertos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListaPuertos.SelectedIndexChanged
+
     End Sub
 End Class

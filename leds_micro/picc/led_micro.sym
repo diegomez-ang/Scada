@@ -1,9 +1,10 @@
-004-005 @WRITE_PROGRAM_MEMORY8.P1
-004-005 @READ_PROGRAM_MEMORY8.P2
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
 006     portb
 008     PSP_DATA
-015     CCP_1_LOW
+008     port_d
 015     CCP_1
+015     CCP_1_LOW
 016     CCP_1_HIGH
 01B     CCP_2
 01B     CCP_2_LOW
@@ -12,10 +13,14 @@
 022-025 _Randseed
 026-027 @sprintf_string
 028     tiempo
-029     tiempo2
-02A     caracter
-02B     @delay_ms1.P1
-02B-02E @PRINTF_L32D_923FPFPF.P2
+029     caracter
+02A     c
+02B-02E @PRINTF_L32D_923FPFPF.P1
+02B     @delay_ms1.P2
+02B     @PSTRINGC7_9600_62_63.@SCRATCH1
+02C     @PSTRINGC7_9600_62_63.@SCRATCH2
+02D     @PSTRINGC7_9600_62_63.@SCRATCH3
+02E     @PSTRINGC7_9600_62_63.@SCRATCH4
 02F     @PRINTF_L32D_923FPFPF.P1
 077     @SCRATCH
 078     @SCRATCH
@@ -29,13 +34,14 @@
 10D-10E @WRITE_PROGRAM_MEMORY8.P2
 
 ROM Allocation:
-000004  @delay_ms1
-000019  secuencia_2
-00002B  secuencia_3
-000066  secuencia_4
-0000E1  MAIN
-0000E1  @cinit1
-0000F9  @cinit2
+000004  @const981.call
+00000B  @const983.call
+000012  @delay_ms1
+000027  @PSTRINGC7_9600_62_63
+00007F  RDA_isr
+000086  @cinit1
+000086  MAIN
+00009C  @cinit2
 0136  StrtoulGO
 0136  StrtolGO
 
@@ -43,7 +49,7 @@ Project Directory:
     C:\Users\diego.gomez\Documents\diego\Scada\leds_micro\picc\
 
 Project Files:
-    led_micro.c                                             [16-sept.-21 16:05  CRC=2D293AD6]
+    led_micro.c                                             [01-oct.-21 16:19  CRC=88818039]
     ..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [18-abr.-14 16:56  CRC=4F277C97]
     ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [08-jun.-11 14:39  CRC=0B6669CF]
     ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-jul.-10 09:27  CRC=897CEC6C]
@@ -51,7 +57,7 @@ Project Files:
     ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-ene.-08 13:55  CRC=2D1F019F]
     ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\input.c [01-may.-13 13:38  CRC=8C3C8665]
 
-Source signature=BCF74325
+Source signature=184F8888
 
 Units:
     led_micro (main)
