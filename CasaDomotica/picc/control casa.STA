@@ -1,0 +1,53 @@
+
+ROM used:   193/2048 (9%)
+            193/2048 (9%) including unused fragments
+
+            0.1 Average locations per line
+            0.5 Average locations per statement
+
+RAM used:   25/224 (11%) at main() level
+            35/224 (16%) worst case
+
+Stack used: 2 worst case (1 in main + 1 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   44    14   4  control casa.c
+  519     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F628A.h
+ 1351   359  96  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+   32     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+  423     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   28     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+  269     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\input.c
+----- -----
+ 2666   373 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     21  11    1             @delay_ms1
+0     19  10    0     20  1.1  RDA_isr
+0     95  49    3    272  3.9  MAIN
+0      9   5    0    480  3.8  @const901
+ Inline         0    480  3.8  @cinit1
+
+Program metrics:
+    Functions               4
+    Statements              373
+    Comments                580
+    Volume (V)              1662
+    Difficulty (D)          12.8
+    Effort to implement (E) 21190
+    Time to implement (T)   20 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   14
+    Maintainability (MI)    56
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00030    45  0  
+00031-007FF   144  1855  
+
+
+

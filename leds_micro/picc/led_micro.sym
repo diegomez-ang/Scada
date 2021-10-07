@@ -43,7 +43,7 @@ Project Directory:
     C:\Users\diego.gomez\Documents\diego\Scada\leds_micro\picc\
 
 Project Files:
-    led_micro.c                                             [16-sept.-21 16:05  CRC=2D293AD6]
+    led_micro.c                                             [04-oct.-21 10:23  CRC=2D293AD6]
     ..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [18-abr.-14 16:56  CRC=4F277C97]
     ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [08-jun.-11 14:39  CRC=0B6669CF]
     ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-jul.-10 09:27  CRC=897CEC6C]

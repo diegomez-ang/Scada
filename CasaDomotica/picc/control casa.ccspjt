@@ -1,0 +1,29 @@
+[PROJECT]
+Target=control casa.hex
+Processor_Text=PIC16F628A
+CCSVersion=5.025
+Compiler=PCM
+[Target Data]
+FileList=control casa.c
+[control casa.c]
+Type=4
+[mru-list]
+1=control casa.c
+
+[Opened Files]
+1=..\..\leds_micro\picc\led_micro.c
+2=control casa.c
+3=
+
+[ProjectLog]
+Days=1
+D1=07-10-2021
+D1_L=5
+D1_L1=[29240]Stopped Editing.
+D1_L2=[29793]Started Editing.
+D1_L3=[30124]Stopped Editing.
+D1_L4=[30157]Started Editing.
+D1_L5=[30819]Stopped Editing.
+[Units]
+Count=1
+1=control casa (main)

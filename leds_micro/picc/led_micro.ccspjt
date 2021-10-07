@@ -11,7 +11,7 @@ Type=4
 1=led_micro.c
 
 [ProjectLog]
-Days=2
+Days=3
 D1=14-09-2021
 D1_L=4
 D1_L1=[60107]Stopped Editing.
@@ -38,10 +38,19 @@ D2_L9=[56703]Stopped Editing.
 D2_L10=[56707]Started Editing.
 D2_L11=[57021]Stopped Editing.
 D2_L12=[57684]Started Editing.
+D3=07-10-2021
+D3_L=6
+D3_L1=[26834]Project Opened.
+D3_L2=[27656]Started Editing.
+D3_L3=[28260]Project Closed.
+D3_L4=[28284]Project Opened.
+D3_L5=[28324]Started Editing.
+D3_L6=[28331]Project Closed.
 
 [Opened Files]
 1=led_micro.c
-2=
+2=..\..\CasaDomotica\picc\control casa.c
+3=
 [Units]
 Count=1
 1=led_micro (main)

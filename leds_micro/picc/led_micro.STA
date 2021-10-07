@@ -30,19 +30,19 @@ Page ROM  %  RAM    Vol Diff  Functions:
 0     59  20    0    293  1.4  secuencia_3
 0    123  41    0    735  1.5  secuencia_4
 0     73  24    0    480  3.8  MAIN
- Inline         0    616  3.3  @cinit1
+ Inline         0             @cinit1
 
 Program metrics:
-    Functions               5
+    Functions               4
     Statements              436
     Comments                606
-    Volume (V)              3034
-    Difficulty (D)          11.3
-    Effort to implement (E) 34231
-    Time to implement (T)   32 minutes
+    Volume (V)              2086
+    Difficulty (D)          7.9
+    Effort to implement (E) 16467
+    Time to implement (T)   15 minutes
     Est Delivered Bugs (B)  0
-    Cyclomatic Complexity   12
-    Maintainability (MI)    16
+    Cyclomatic Complexity   6
+    Maintainability (MI)    73
 
  Segment     Used  Free
 -----------  ----  ----
